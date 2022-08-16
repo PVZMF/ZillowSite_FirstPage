@@ -1,0 +1,162 @@
+
+body{
+    padding:0;
+    margin:0;
+}
+
+a{text-decoration: none;}
+
+.container{
+    margin:0  0;
+
+}
+
+ul{
+    padding-left: 0;
+    margin-top:0;
+    margin-bottom: 0; 
+    list-style: none;
+}
+
+nav{
+    max-width:100%;
+    height:80px;
+    background-color: #fff;
+    border-bottom: 1px solid #DBDBDD;
+    font-size: 0;
+    position:relative;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: .5px;
+    padding:0 70px 0 40px;
+    font-family: 'Fraunces', serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Lora', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Orelega One', cursive;
+    font-family: 'Questrial', sans-serif;
+}
+
+nav> div > ul > li{
+    display: inline-block;
+    font-size: 16px;
+    padding:0 15px;
+    position:relative;
+}
+
+nav >div> ul > li > a{
+    color:rgb(42, 42, 51);
+    display:block;
+    padding:20px 0;
+}
+
+nav > div> ul > li:hover > a{
+    color:rgb(0, 106, 255);
+}
+
+.mega-menu{
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DBDBDD;
+    visibility: hidden;
+    opacity:0;
+    position: absolute;
+    left: 0;
+    top:80px;
+    width:100%;
+}
+
+.mega-menu h3,
+.scroll-item h3{
+    color:rgb(42, 42, 51);
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.under-item{
+    display: flex;
+}
+.margin-right{
+    margin-right: 20px;
+    width:140px;
+}
+
+.no-border-right{
+    border-right:none !important;
+}
+
+.mega-menu .container{
+    display:flex;
+    justify-content: flex-start;
+    margin-left:35px ;
+}
+
+.mega-menu .item{
+    flex-grow: 0;
+    border-right:1px solid #DBDBDD;
+    margin:30px 0;
+    padding:0 30px;
+}
+
+.mega-menu li,
+.scroll-menu li{
+   margin-bottom: 25px;
+}
+
+.mega-menu a,
+.scroll-menu a{
+    font-size: 14px;
+    color:rgb(0, 106, 255);
+    text-decoration: none;
+}
+
+.mega-menu a:hover{
+    color:rgb(42, 42, 51);
+    text-decoration: underline;
+}
+
+.dropdown{
+    position:static;
+}
+
+.dropdown:hover .mega-menu{
+    visibility: visible;
+    opacity: 1;
+    border-top: 1px solid #DBDBDD;
+}
+
+img{
+    width:160px;
+    height:90px;
+}
+
+.scroll-menu{
+    width:310px;
+    height:500px;
+    border: 1px solid #DBDBDD;
+    visibility: hidden;
+    opacity:0;
+    position: absolute;
+    right: 320px;
+    top:80px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.dropdown:hover .scroll-menu{
+    visibility: visible;
+    opacity: 1;
+}
+
+.scroll-menu  .scroll-item{
+    flex-grow: 0;
+    border-bottom:1px solid #DBDBDD;
+    margin:0 30px;
+}
+
+.scroll-menu a:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(42, 42, 51);
+}
+
+
+
